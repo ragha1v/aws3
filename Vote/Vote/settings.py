@@ -88,10 +88,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'web_python_votingsystem',
-        'USER': 'admin',
-        'PASSWORD': 'RaghavGoyal123',
-        'HOST': 'database.cjsvui335bah.us-east-1.rds.amazonaws.com',
-        'PORT': 3306
+        'USER': 'root',
+        'PASSWORD': '12345678',
+        'HOST': 'rds1.cz72ehk2hypd.us-east-1.rds.amazonaws.com',
+        'PORT': 8000
     }
 }
 
