@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock title %}
+
+{% block main_content %}
+
+<div class="container mt-5 mx-auto col-md-6 card-shadow p-5">
+    <div class="login-form">
+        {% if messages %}
+        {% for msg in messages %}
+        <div class="alert alert-{{msg.tags}}" role="alert">
+            {{msg}}
+        </div>
+        {% endfor %}
+        {% endif %}
+        <form action="adminlogincheck" method="post">
+            {% csrf_token %}
+            <h3 class="text-center">Admin Log In</h3>
+            <hr>
+            <div class="form-group">
+                <input type="text" class="form-control" name="admin" placeholder="Admin" required="required">
+            </div>
+            <div class="form-group mt-4">
+                <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group mt-4">
+                <button type="submit" class="btn btn-primary btn-block ">Login</button>
+            </div>
+         
+        </form>
+    </div>
+</div>
+
+{% endblock main_content %}
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+{% load static %} 
+
+    <div class="container mt-3">
+      <h2 class="text-center alert alert-primary">"My Vote is my Future" - Power of One Vote</h2>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center alert alert-info">VOTING SECTION</h2>
+    </div>
+    <br><br>
+
+    <div class="row container mx-auto">
+      <div class="col-mb-5 col-sm-4 ">
+        <div class="vote smbg">
+          <a  class="text-decoration-none" href="{% url  'vote'%}?party=app">
+            <div class="Voting text-center">
+              <img src="{% static 'images\appp.jpg' %}" class="img-responsive center-block " width="250" height="220" alt="">
+              <p class="cpim">APP</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      <div class="col-mb-5 col-sm-4">
+          <div class="vote pgbg">
+          <a  class="text-decoration-none" href="{% url  'vote'%}?party=bjp">
+            <div class="Voting text-center">
+              <img src="{% static 'images\bjpp.png' %}" class="img-responsive center-block " width="250" height="220" alt="">
+              <p class="tmc">BJP</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-mb-5 col-sm-4 " 
+        >
+        <div class="vote smbg">
+          <a class="text-decoration-none" href="{% url  'vote'%}?party=cong">
+            <div class="Voting text-center">
+              <img src="{% static 'images\congs.png' %}" class="img-responsive center-block " width="250" height="220" alt="">
+              <p class="nota">CONG</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div><br><br><br>
+
+
+    <div class="row container mx-auto" >
+      <div class="col-mb-5 col-sm-4 ">
+        <div class="vote smbg">
+          <a  class="text-decoration-none" href="{% url  'vote'%}?party=cpim">
+            <div class="Voting text-center">
+              <img src="{% static 'images\cpm.jpg' %}" class="img-responsive center-block " width="250" height="220" alt="">
+              <p class="cpim">CPIM</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+      <div class="col-mb-5 col-sm-4 ">
+        <div class="vote pgbg">
+          <a  class="text-decoration-none" href="{% url  'vote'%}?party=tmc">
+            <div class="Voting text-center">
+              <img src="{% static 'images\tmc.png' %}" class="img-responsive center-block " width="250" height="220" alt="">
+              <p class="tmc">TMC</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-mb-5 col-sm-4 " 
+        >
+        <div class="vote smbg">
+          <a  class="text-decoration-none" href="{% url  'vote'%}?party=nota">
+            <div class="Voting text-center">
+              <img src="{% static 'images\notaa.png' %}" class="img-responsive center-block " width="250" height="220" alt="">
+              <p class="nota">NOTA</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div><br><br><br>
+
+{% endblock main_content %} 

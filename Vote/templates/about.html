@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block main_content %}
+<div class="row container mx-auto text-center">  
+        <h1>eVoteINDIA Online Voting System</h1><hr><br>
+    <div>
+        <h4>eVoteINDIA allows organizations, groups and communities to make decisions online by providing e-voting technology.</h4><br><br>
+    </div>
+    
+    <div class="col-mb-5 col-sm-4 ">
+        <img src="{% static 'images\voting.webp' %}" class="img-responsive " width="300" height="300" alt="">
+    </div><br><br>
+
+    <div class="col-mb-5 col-sm-8 ">
+        <h2>Many types of elections - one tool</h2><br>
+        <h5>Election organizers may pick the best type of election that fits their community. We have four types of elections: Single Choice Voting, Multiple Choice Voting, Rank-Choice Voting and Open Voting.</h5><br><br>
+
+        <h4>Download</h4>
+        <img src="{% static 'images\apple.png' %}" class="img-responsive " width="110" height="50" alt="">
+        <img src="{% static 'images\gplay.png' %}" class="img-responsive " width="115" height="50" alt="">
+        
+    </div>
+    
+</div>
+{% endblock main_content%}
